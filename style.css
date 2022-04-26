@@ -34,6 +34,17 @@ html, body, main {
     color: var(--whiteFFFFFF);
 }
 
+/* Main */
+main h1 {
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: var(--black000000);
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
 /* Carousel */
 .carousel {
     position: relative;
@@ -79,6 +90,40 @@ html, body, main {
 
 .active {
     background: var(--whiteFFFFFF);
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category {
+    flex: 1 0 30%;
+    margin: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.category img {
+    width: 100%;
+    transition: 0.2s;
+}
+
+.category img:hover {
+    filter: brightness(0.25);
+    transform: scale(1.05);
+}
+
+.category h4 {
+    color: var(--whiteFFFFFF);
+    position: absolute;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.1em;
 }
 
 /* Footer */
