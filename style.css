@@ -7,7 +7,7 @@
     --black000000: #000000;
     --redDD5350: #DD5350;
     --whiteFFFFFF: #FFFFFF;
-    --padding24: 24px;
+    --padding24: 36px;
 }
 
 html, body, main {
@@ -100,7 +100,7 @@ main h1 {
 
 .category {
     flex: 1 0 30%;
-    margin: 24px;
+    margin: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,11 +126,98 @@ main h1 {
     letter-spacing: 0.1em;
 }
 
+/* Best Sellers */
+.sellers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 36px;
+    justify-content: space-between;
+}
+
+.sellers article {
+    background: var(--whiteFFFFFF);
+    border: 4px solid var(--grayF8F8F8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 24px;
+    flex: 1 0 22%;
+    transition: 0.3s;
+}
+
+.sellers article .content {
+    padding: 16px;
+}
+
+.sellers article .content h4 {
+    margin-top: 0;
+    font-size: 20px;
+    color: var(--gray7B7B7B);
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.sellers article .content h5 {
+    margin-top: 0;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.actual-price {
+    text-decoration-line: line-through;
+    color: var(--gray7B7B7B);
+}
+
+.discount-price {
+    margin-left: 16px;
+    color: var(--redDD5350)
+}
+
+.ratensold {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ratensold img {
+    width: 32px !important; 
+    height: 32px !important; 
+} 
+
+.ratensold p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+} 
+
+.sellers article .content h6 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+}
+
+.sellers article img {
+    width: 100%;
+}
+
+.sellers article:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
 /* Latest Customer Review */
 .latest-customer-review {
     border: 2px solid var(--black000000);
-    margin: 24px;
-    padding: 24px;
+    margin: 36px;
+    padding: 36px;
+    transition: 0.3s;
+}
+
+.latest-customer-review:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .latest-customer-review article .top {
@@ -212,11 +299,12 @@ main h1 {
 }
 
 /* Footer */
+
 footer h3 {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 500;
-    font-size: var(--padding24);
+    font-size: 24px;
     line-height: 52px;
     padding: 0;
     margin: 0;
@@ -224,14 +312,15 @@ footer h3 {
 }
 
 .top-footer {
-    padding: var(--padding24);
+    padding: 64px var(--padding24);
     background-color: var(--grayF8F8F8);
     display: flex;
     flex-wrap: wrap;
 }
 
 .top-footer .container {
-    flex: 1 0 45%
+    flex: 1 0 45%;
+    margin: 16px 0;
 }
 
 .top-footer h2 {
@@ -247,7 +336,7 @@ footer h3 {
 .top-footer p {
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 35px;
 
     letter-spacing: 0.15em;
