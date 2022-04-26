@@ -126,6 +126,57 @@ main h1 {
     letter-spacing: 0.1em;
 }
 
+/* Latest Customer Review */
+.latest-customer-review {
+    border: 2px solid var(--black000000);
+    margin: 24px;
+    padding: 24px;
+}
+
+.latest-customer-review article .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.latest-customer-review article .top div {
+    display: flex;
+    align-items: center;
+}
+
+.latest-customer-review article .top div h2 {
+    margin: 0;
+    padding: 0;
+    margin-left: 24px;
+}
+
+.latest-customer-review article .rating img {
+    width: 36px;
+    height: 36px;
+}
+
+.latest-customer-review article .content h3 {
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.latest-customer-review article .content p {
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+
+.latest-customer-review article .media {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.latest-customer-review article .media img {
+    width: 190px;
+    margin: 0 16px 16px 0;
+}
+
 /* Footer */
 footer h3 {
     font-family: 'Jost';
