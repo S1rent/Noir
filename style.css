@@ -15,6 +15,13 @@ html, body, main {
     margin: 0;
     background-color: var(--whiteFFFFFF);
     font-family: 'Jost';
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    min-width: 310px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 /* Color */
@@ -39,6 +46,10 @@ html, body, main {
 }
 
 /* Main */
+main {
+    padding-top: 145px;
+}
+
 main h1 {
     font-style: normal;
     font-weight: 300;
@@ -47,6 +58,70 @@ main h1 {
     color: var(--black000000);
     font-size: 36px;
     margin-bottom: 0;
+}
+
+/* Header */
+header {
+    position: fixed;
+    background: var(--whiteFFFFFF);
+    width: 100%;
+    z-index: 1000;
+}
+
+header div {
+    display: flex;
+    padding: 16px; 
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header div a {
+    text-decoration-style: none;
+}
+
+header h3 {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 52px;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.15em;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
+
+header nav {
+    background: var(--black000000);
+}
+
+header nav ul {
+    padding: 16px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+}
+
+header nav ul a {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.15em;
+    color: var(--whiteFFFFFF);
+    text-decoration: none;
+    margin: 32px;
+    transition: 0.3s;
+}
+
+header nav ul a:hover {
+    font-weight: 800;
+    font-size: 24px;
 }
 
 /* Carousel */
@@ -145,6 +220,7 @@ main h1 {
     margin: 24px;
     flex: 1 0 22%;
     transition: 0.3s;
+    min-width: 330px;
 }
 
 .sellers article .content {
@@ -340,6 +416,7 @@ footer h3 {
 .top-footer .container {
     flex: 1 0 45%;
     margin: 16px 0;
+    padding: 16px;
 }
 
 .top-footer h2 {
@@ -370,6 +447,10 @@ footer h3 {
     flex-wrap: wrap;
 }
 
+.footer-social-media-section li {
+    margin: 8px 0px;
+}
+
 .footer-social-media-section ul a {
     width: 56px;
     height: 56px;
@@ -377,8 +458,8 @@ footer h3 {
     background-color: var(--black000000);
     align-items: center;
     justify-content: center;
-    display: flex;
     margin: 0 16px 0 0;
+    display: flex;
     transition: all .25s ease-in-out
 }
 
@@ -432,4 +513,201 @@ footer h3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+/* About Us */
+aside {
+    text-align: center;
+    margin-top: 48px;
+    padding: 24px;
+}
+
+aside img {
+    border-radius: 50%;
+    width: 300px;
+}
+
+aside h1 {
+    font-size: 128px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+aside h2 {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+aside h5 {
+    font-size: 64px;
+    margin: 0;
+}
+
+aside h6 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+}
+
+aside p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+aside ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+aside li {
+    margin: 32px;
+}
+
+aside ul img {
+    width: 36px;
+    transition: 0.2s;
+}
+
+aside ul img:hover {
+    transform: scale(1.5);
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 1100px) {
+    footer form {
+        display: block !important;
+    }
+
+    #button-subscribe {
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    #input-email {
+        position: relative;
+    }
+
+    input {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .category {
+        margin: 16px;
+    }
+
+    .rating {
+        margin-top: 16px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .latest-customer-review article .top {
+        display: block;
+    }
+
+    .sellers {
+        margin: 16px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 16px;
+    }
+
+    aside {
+        margin-top: 100px;
+    }
+
+    header nav ul a {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    aside h1 {
+        font-size: 84px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    footer h3 {
+        font-size: 16px;
+    }
+
+    .bottom-footer {
+        display: block;
+    }
+
+    aside img {
+        width: 250px;
+    }
+
+    aside h5 {
+        font-size: 48px;
+    }
+
+    aside h6 {
+        font-size: 36px;
+    }
+
+    main {
+        padding-top: 176px;
+    }
+}
+
+@media only screen and (max-width: 443px) {
+    main {
+        padding-top: 238px;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    #input-email {
+        font-size: 14px;
+    }
+
+    #button-subscribe {
+        font-size: 16px;
+    }
+
+    .top-footer {
+        padding: 32px 16px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    aside h1 {
+        font-size: 64px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    aside img {
+        width: 200px;
+    }
+
+    .top-footer p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 307px) {
+    main {
+        padding-top: 298px;
+    }
 }
