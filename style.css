@@ -674,6 +674,36 @@ aside ul img:hover {
     main {
         padding-top: 238px;
     }
+
+    .sellers article {
+        margin: 8px 0;
+        min-width: 300px;
+    }
+
+    .latest-customer-review article .top div {
+        display: block;
+        text-align: center;
+    }
+
+    .latest-customer-review article {
+        text-align: center;
+    }
+
+    .latest-customer-review article .media {
+        justify-content: center;
+    }
+
+    .categories {
+        display: block;
+    }
+
+    header nav ul li {
+        margin: 8px;
+    }
+
+    .services li h2 {
+        font-size: 36px;
+    }
 }
 
 @media only screen and (max-width: 395px) {
